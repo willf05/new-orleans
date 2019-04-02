@@ -18,40 +18,38 @@ public class Seasons {
 
         System.out.println("Enter a month to find out its season");
 
-        String month = br.readLine().substring(0, 3);
-        //note: String month = br.readLine().substring(0, 3); && case "Apr" -- values like "Apra123 *#" will be accepted as "Apr"
-        //note: may add .toUpperCase() && case "APR" -- values like "aPra" -- will be accepted as "APR"
+        String month = br.readLine();
 
-        Season season;
+        Season season = null;
 
         switch (month) {
-            case "Dec":
-            case "Jan":
-            case "Feb":
+            case "December":
+            case "January":
+            case "February":
                 season = Season.WINTER;
-                System.out.println(month + " belongs to " + season);
+                // System.out.println(month + " belongs to " + season);
                 break;
-            case "Mar":
-            case "Apr":
+            case "March":
+            case "April":
             case "May":
                 season = Season.SPRING;
-                System.out.println(month + " belongs to " + season);
                 break;
-            case "Jun":
-            case "Jul":
-            case "Aug":
+            case "June":
+            case "July":
+            case "August":
                 season = Season.SUMMER;
-                System.out.println(month + " belongs to " + season);
                 break;
-            case "Sep":
-            case "Oct":
-            case "Nov":
+            case "September":
+            case "October":
+            case "November":
                 season = Season.AUTUMN;
-                System.out.println(month + " belongs to " + season);
                 break;
             default:
-                // ?? System.out.println(month + " belongs to " + String.valueOf(Season season));
                 System.out.println("This month doesn't exist");
+        }
+
+        if (season != null) {
+            System.out.println(month + " belongs to " + season);
         }
     }
 }
