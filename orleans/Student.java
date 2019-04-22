@@ -27,7 +27,7 @@ public class Student {
         avgRating = sumRating/studentsQty;
     }
 
-    public static boolean isFirstBetterStudent(double a, double b) {
+    public static boolean betterStudent(double a, double b) {
         return (a > b);
     }
 
