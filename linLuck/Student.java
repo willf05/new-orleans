@@ -3,7 +3,7 @@ package lInLuck;
 public class Student {
     int rating;
     private String name;
-    private static int sumRating;
+    private static double sumRating;
     private static int studentsQty;
     private static double avgRating;
 
@@ -70,6 +70,7 @@ public class Student {
         // TODO remove student -- DONE
         sumRating -= student.getRating();
         studentsQty -= 1;
+        getAvgRating();
     }
 
     @Override
