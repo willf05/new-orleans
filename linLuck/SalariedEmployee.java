@@ -30,12 +30,11 @@ public class SalariedEmployee extends Employee {
   public void setFixedMonthlyPayment(double fixedMonthlyPayment) {
     // TODO fill in code here -- DONE
     this.fixedMonthlyPayment = fixedMonthlyPayment;
-    avgMonthlySalary = fixedMonthlyPayment;
   }
 
   // TODO fill in code here
-  @Override
+//  @Override
   public void calculatePay() {
-//    this.avgMonthlySalary = avgMonthlySalary;
+    avgMonthlySalary = fixedMonthlyPayment;
   }
 }

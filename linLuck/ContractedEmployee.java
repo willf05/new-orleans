@@ -41,12 +41,11 @@ public class ContractedEmployee extends Employee {
   public void setNumberOfHoursWorked(double numberOfHoursWorked) {
     // TODO fill in code here -- DONE
     this.numberOfHoursWorked = numberOfHoursWorked;
-    avgMonthlySalary = hourlyRate * numberOfHoursWorked;
   }
 
   // TODO fill in code here
-  @Override
-  public void calculatePay() {
-//    this.avgMonthlySalary = avgMonthlySalary;
+//  @Override
+  public void  calculatePay() {
+    avgMonthlySalary = hourlyRate * numberOfHoursWorked;
   }
 }

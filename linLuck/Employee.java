@@ -6,7 +6,8 @@ public abstract class Employee implements Payable {
   String name;
   double avgMonthlySalary;
 
-  public Employee() {}
+  public Employee() {
+  }
 
   public Employee(String employeeId, String name) {
     // TODO fill in code here -- DONE
