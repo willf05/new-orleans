@@ -47,6 +47,6 @@ public class ContractedEmployee extends Employee {
   // TODO fill in code here
   @Override
   public void calculatePay() {
-    this.avgMonthlySalary = avgMonthlySalary;
+//    this.avgMonthlySalary = avgMonthlySalary;
   }
 }

@@ -48,6 +48,5 @@ public class Employee implements Payable {
   }
 
   public void calculatePay() {
-    this.avgMonthlySalary = avgMonthlySalary;
   }
 }
