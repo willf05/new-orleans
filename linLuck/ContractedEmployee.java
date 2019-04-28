@@ -8,8 +8,7 @@ public class ContractedEmployee extends Employee {
 
   public ContractedEmployee(String employeeId, String name, String federalTaxId) {
     // TODO fill in code here -- DONE
-    this.employeeId = employeeId;
-    this.name = name;
+    super(employeeId, name);
     this.federalTaxId = federalTaxId;
   }
 

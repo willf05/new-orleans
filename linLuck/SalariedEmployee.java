@@ -7,8 +7,7 @@ public class SalariedEmployee extends Employee {
 
   public SalariedEmployee(String employeeId, String name, String socialSecurityNumber) {
     // TODO fill in code here -- DONE
-    this.employeeId = employeeId;
-    this.name = name;
+    super(employeeId, name);
     this.socialSecurityNumber = socialSecurityNumber;
   }
 
