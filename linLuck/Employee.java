@@ -1,6 +1,6 @@
 package lInLuck;
 
-public class Employee implements Payable {
+public abstract class Employee implements Payable {
   // TODO fix class declaration and declare variables here -- DONE
   String employeeId;
   String name;
@@ -47,6 +47,5 @@ public class Employee implements Payable {
 //    return("Employee: " + employeeId + ", Name: " + name + ", Avg Salary: " + String.format(format, avgMonthlySalary));
   }
 
-  public void calculatePay() {
-  }
+  public abstract void calculatePay();
 }
