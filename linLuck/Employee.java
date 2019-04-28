@@ -42,8 +42,8 @@ public class Employee implements Payable {
   @Override
   public String toString() {
     // TODO fill in code here and replace the return statement, be sure to format double value -- DONE
-    String format = "%.2f";
-    return (String.format("Employee: %s, Name: %s, Avg Salary: %s", employeeId, name, String.format(format, avgMonthlySalary)));
+//    String format = "%.2f";
+    return (String.format("Employee: %s, Name: %s, Avg Salary: %s", employeeId, name, String.format("%.2f", avgMonthlySalary)));
 //    return("Employee: " + employeeId + ", Name: " + name + ", Avg Salary: " + String.format(format, avgMonthlySalary));
   }
 
