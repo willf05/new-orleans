@@ -35,7 +35,7 @@ public class TemperatureTest {
         {-26.11111111111111, -15},
         // TODO add 2 more test data here
         {Math.min(118.2, (Integer.parseInt("" + '\u0036' +'\u0034'))), Math.abs(-147.2)},
-        //Integer.parseInt("" + "6" +"4")) -- min(118.2, 64)
+        //Integer.parseInt("" + "6" + "4")) -- Math.min(118.2, 64)
         {-21, -58e-1} //-21 C = -5.8 F
     };
   }
