@@ -26,4 +26,3 @@ public class Temperature {
     return fahrenheit;
   }
 }
-
